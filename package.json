@@ -1,0 +1,21 @@
+{
+  "name": "seubarriga-cypress-tests",
+  "version": "1.0.0",
+  "description": "Projeto de automação E2E para Seu Barriga com Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "npx cypress open",
+    "clean:results": "if exist cypress\\results rmdir /s /q cypress\\results && if exist cypress\\videos rmdir /s /q cypress\\videos",
+    "cypress:run": "npx cypress run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cypress/xpath": "^2.0.3",
+    "cypress": "^13.11.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-report-generator": "^6.2.0"
+  }
+}
