@@ -30,6 +30,7 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
 
 - Node.js e npm:
      - Verificação: Abra seu terminal e execute:
+
         Bash
 
         node -v
@@ -57,27 +58,30 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
     Bash
 
     npm install
+
     Este comando instalará todas as dependências do Cypress e outras bibliotecas definidas no package.json.
 
 
 ▶️ 4. Como Executar os Testes
 Há duas maneiras principais de executar os testes automatizados:
 
-    4.1. Modo Interativo (Cypress Test Runner)
-    Para depurar, desenvolver novos testes ou observar o fluxo em tempo real:
+   4.1. Modo Interativo (Cypress Test Runner)
+   Para depurar, desenvolver novos testes ou observar o fluxo em tempo real:
 
-    Bash
+   Bash
 
-    npx cypress open
-    Este comando abrirá a interface gráfica do Cypress, onde você poderá selecionar as especificações (.cy.js) para execução ou rodar todos os testes de uma pasta.
+   npx cypress open
+   
+   Este comando abrirá a interface gráfica do Cypress, onde você poderá selecionar as especificações (.cy.js) para execução ou rodar todos os testes de uma pasta.
 
-    4.2. Modo Headless (Via Linha de Comando)
-    Para execuções em ambiente de CI/CD ou para rodar todos os testes de forma automatizada sem interface gráfica:
+   4.2. Modo Headless (Via Linha de Comando)
+   Para execuções em ambiente de CI/CD ou para rodar todos os testes de forma automatizada sem interface gráfica:
 
-    Bash
+   Bash
 
-    npx cypress run
-    Os resultados da execução serão exibidos no terminal e os relatórios gerados conforme a configuração.
+   npx cypress run
+
+   Os resultados da execução serão exibidos no terminal e os relatórios gerados conforme a configuração.
 
 
 📊 5. Relatórios de Teste e Evidências
@@ -95,5 +99,6 @@ A organização do projeto segue as melhores práticas para automação com Cypr
   - cypress.config.js: Arquivo de configuração principal do Cypress, onde são definidas variáveis de ambiente, configurações de browser, reporters, etc.
   - .gitignore: Define os arquivos e diretórios que devem ser ignorados pelo Git (ex: node_modules, cypress/videos, cypress/screenshots, cypress/results).
   - package.json: Armazena metadados do projeto, dependências e scripts npm para execução de testes.
+
 
 Desenvolvido com ❤️ por Marcos Vinícius Carneiro
